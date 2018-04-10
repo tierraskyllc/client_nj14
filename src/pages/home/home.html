@@ -1,14 +1,82 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>client_nj14</ion-title>
+	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="getting-started">
+	<div class="home-hello">
+		<!-- <img src="http://lorempixel.com/g/640/480/technics"/> -->
+		<!-- <img src="/assets/gifs/spinning_globe.gif"/> -->
+		<img src="/assets/imgs/thelffl.png"/>
+		<div class="hello-title">
+			<h1>International & National</h1>
+			Motorcycle Association
+		</div>
+	</div>
+
+	<ion-grid style="height:40%">
+
+		<ion-row justify-content-center align-items-center>
+			<ion-card class="quick-action" (click)="memberLogin()">
+				<ion-card-content>
+					<ion-icon name="person"></ion-icon>
+					<span>Member Login</span>
+				</ion-card-content>
+			</ion-card>
+		</ion-row>
+
+
+
+
+		<!-- <ion-row *ngFor="let tilePair of tiles">
+			<ion-col *ngFor="let tile of tilePair">
+				<ion-card class="tile" (click)="navigateTo(tile)">
+					<ion-card-content>
+						<ion-item>
+							<h1><ion-icon [name]="tile.icon"></ion-icon></h1>
+							<h2>{{tile.title}}</h2>
+						</ion-item>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row> -->
+
+
+
+		<ion-row>
+			<ion-card class="quick-action" (click)="callUs()">
+				<ion-card-content>
+					<ion-icon name="people"></ion-icon>
+					<span>Register New Member</span>
+				</ion-card-content>
+			</ion-card>
+		</ion-row>
+
+
+
+		<ion-row>
+			<ion-card class="quick-action" (click)="getDirections()">
+				<ion-card-content>
+					<ion-icon name="compass"></ion-icon>
+					<span>Find a Chapter & Get directions</span>
+				</ion-card-content>
+			</ion-card>
+		</ion-row>
+
+		<!-- <ion-row>
+			<ion-card class="quick-action" (click)="openFacebookPage()">
+				<ion-card-content>
+					<ion-icon name="logo-facebook"></ion-icon>
+					<span>Visit us on Facebook underconstruction</span>
+				</ion-card-content>
+			</ion-card>
+		</ion-row> -->
+
+
+	</ion-grid>
+
 </ion-content>

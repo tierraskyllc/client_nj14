@@ -8,11 +8,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad HomePage');
+  // }
+
+  videoBackgroundPage(): void {
+    this.navCtrl.push('VideoBackgroundPage')
+  };
+
+  memberLoginPage(): void {
+    this.navCtrl.push('LoginPage')
+  };
+
+  newMemberRegistrationPage(): void {
+    this.navCtrl.push('NewMemberRegistrationPage')
+  };
 
 }

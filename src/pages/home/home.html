@@ -18,19 +18,25 @@
 		</div>
 	</div>
 
-	<ion-grid style="height:40%">
+	<ion-grid style="height:100%">
+
+			<ion-row justify-content-center align-items-center>
+					<ion-card class="quick-action">
+						<ion-card-content>
+							<ion-icon name="videocam"></ion-icon>
+							<span (click)='videoBackgroundPage()'>A Possible Video Page</span>
+						</ion-card-content>
+					</ion-card>
+				</ion-row>
 
 		<ion-row justify-content-center align-items-center>
 			<ion-card class="quick-action">
 				<ion-card-content>
 					<ion-icon name="person"></ion-icon>
-					<span>Member Login</span>
+					<span (click)='memberLoginPage()'>Member Login</span>
 				</ion-card-content>
 			</ion-card>
 		</ion-row>
-
-
-
 
 		<!-- <ion-row *ngFor="let tilePair of tiles">
 			<ion-col *ngFor="let tile of tilePair">
@@ -45,13 +51,11 @@
 			</ion-col>
 		</ion-row> -->
 
-
-
 		<ion-row>
 			<ion-card class="quick-action">
 				<ion-card-content>
 					<ion-icon name="people"></ion-icon>
-					<span>Register New Member</span>
+					<span (click)='newMemberRegistrationPage()'>New Member Registration</span>
 				</ion-card-content>
 			</ion-card>
 		</ion-row>

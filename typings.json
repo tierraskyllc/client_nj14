@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "google-libphonenumber": "registry:dt/google-libphonenumber#7.4.3+20161129100251"
+  }
+}

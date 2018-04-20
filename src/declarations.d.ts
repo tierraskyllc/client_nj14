@@ -11,4 +11,8 @@
   For more info on type definition files, check out the Typescript docs here:
   https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
 */
-declare module '*';
+
+/* this here helped declare was in the OG...
+https://github.com/ionic-team/ionic-app-scripts/issues/1052
+*/
+// declare module '*';

@@ -1,6 +1,9 @@
+import { TextMaskModule } from 'angular2-text-mask';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { NewMemberRegistrationPage } from './new-member-registration';
+
+
 
 @NgModule({
   declarations: [
@@ -8,6 +11,7 @@ import { NewMemberRegistrationPage } from './new-member-registration';
   ],
   imports: [
     IonicPageModule.forChild(NewMemberRegistrationPage),
+    TextMaskModule
   ],
   
 })

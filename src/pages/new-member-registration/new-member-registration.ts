@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -7,7 +6,10 @@ import { UserPage } from './../user/user';
 import { UsernameValidator } from './../../validators/username.validator';
 import { PasswordValidator } from './../../validators/password.validator';
 import { PhoneValidator } from './../../validators/phone.validator';
+
 import { Country } from './new-member-registration.model';
+
+import emailMask from 'text-mask-addons/dist/emailMask';
 
 @IonicPage()
 @Component({
@@ -19,11 +21,13 @@ export class NewMemberRegistrationPage {
   validations_form: FormGroup;
   matching_passwords_group: FormGroup;
   country_phone_group: FormGroup;
+
+  emailMask = emailMask;
+  
   countries: Array<Country>;
   genders: Array<string>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public formBuilder: FormBuilder) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams, public formBuilder: FormBuilder) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewMemberRegistrationPage');
